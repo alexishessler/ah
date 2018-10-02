@@ -1,0 +1,15 @@
+.navbaritem {
+  margin-left: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.navbaritem:focus {
+  background: #f9d548;
+}
+
+.appbar {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}

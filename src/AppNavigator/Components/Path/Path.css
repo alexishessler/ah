@@ -1,0 +1,62 @@
+.leftgrid {
+  margin-left: 400;
+  padding-left: 50;
+
+}
+
+.greybackpath {
+  background-color: #F1F3F4;
+}
+
+.itemstepper {
+  background-color: #FFFFFF;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 2px #E5E5E5;
+  margin-bottom: 10px;
+}
+
+.grid {
+  padding-top: 20px;
+}
+
+.imgstepper {
+  max-width: 20%;
+  min-width: 150px;
+  border: 3px solid #727581;
+  border-radius: 8px;
+  padding: 20px;
+  vertical-align: middle;
+  margin: 20px;
+  box-shadow: 0 2px 2px #E5E5E5;
+}
+
+.divimage {
+  width: 80px;
+}
+
+.iconstepper {
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+/* .paragraphstepper {
+  margin: auto;
+  text-align: left;
+  max-width: 500px;
+} */
+.paragraphstepper {
+  text-align: justify;
+  margin: 20px;
+}
+
+/* .stepperflex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+} */
+
+/* .gridImage {
+  text-align: right;
+  vertical-align: middle;
+} */
