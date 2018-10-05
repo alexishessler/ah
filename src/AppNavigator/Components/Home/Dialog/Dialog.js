@@ -30,7 +30,7 @@ class AlertDialogSlide extends React.Component {
   };
 
   componentDidMount(){
-    console.log("DEPUIS DIALOG", this.props.modal)
+    // console.log("DEPUIS DIALOG", this.props.modal)
     this.setState({
       open: this.props.modal
     })

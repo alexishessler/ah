@@ -40,14 +40,13 @@ class Apps extends React.Component {
     return (
       <div className="">
 
-          <Card className={styles.card}>
+          <Card className={styles.card} key={this.props.key}>
                 <CardActionArea>
                   <CardMedia
                     component="img"
                     className={styles.media}
                     image={this.props.image}
                     title={this.props.name}
-                    key={this.props.key}
                   />
                 <CardContent className={styles.size}>
                     <Typography gutterBottom variant="headline" component="h2">
@@ -59,7 +58,7 @@ class Apps extends React.Component {
                   </CardContent>
                 </CardActionArea>
                 <CardActions style={{display: "inline"}}>
-                      <Button  size="small" style={{color: "#727581"}}>
+                      <Button  size="small" style={{color: "#4154AF"}}>
                         Discover
                       </Button>
                 </CardActions>

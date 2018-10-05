@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import Grid from '@material-ui/core/Grid';
 // import './Jumbotron.css';
 
-import Tab from './Tab/Tab';
+// import Tab from './Tab/Tab';
+import Expansion from './Expansion';
 
 
 
@@ -20,8 +21,11 @@ class Social extends React.Component {
 
     return (
       <div className="greybackpath">
+        <h1 className="bigtitle">Social</h1>
           <Grid container>
-            <Tab/>
+
+            <Expansion/>
+
           </Grid>
       </div>
     );
@@ -29,6 +33,6 @@ class Social extends React.Component {
 }
 
 
-
+// <Tab/>
 
 export default Social;

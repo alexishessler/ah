@@ -13,11 +13,12 @@ import Icon from '@material-ui/core/Icon';
 
 import  '../Path.css';
 
-import Image1 from './Images/alexis.png';
+// import Image1 from './Images/alexis.png';
 import Image2 from './Images/lacapsule.png';
 import Image3 from './Images/cybel.svg';
 import Image4 from './Images/lafarge.png';
 import Image5 from './Images/armees.png';
+import Image6 from './Images/equallywork.png';
 
 const styles = theme => ({
   root: {
@@ -44,7 +45,7 @@ const styles = theme => ({
 });
 
 function getSteps() {
-  return ['Sept 2018 - Current', 'Apr 2018 - Jun 2018', 'Aug 2015 - Current', 'Sept 2017 - Apr 2018', 'Aug 2016 - Sept 2017'];
+  return ['Sept 2018 - Current', 'July 2018 - Current','Apr 2018 - Jun 2018', 'Aug 2015 - Current', 'Sept 2017 - Apr 2018', 'Aug 2016 - Sept 2017'];
 }
 
 function getStepContent(step) {
@@ -61,15 +62,34 @@ function getStepContent(step) {
               <img className="imgstepper" src={Image2} alt="test"/>
             </Grid>
             <Grid alignContent="center" alignItems="center" md={8}>
-              <p className="paragraphstepper"><Icon style={{color: "#727581"}} className="iconstepper">check_box</Icon>Création de quiz et QCM sur le back-office de la plateforme interne de La Capsule</p>
-              <p className="paragraphstepper"><Icon style={{color: "#727581"}} className="iconstepper">check_box</Icon>Explications de concepts de programmation pour 25 élèves et relecture de code et correction de bugs</p>
-              <p className="paragraphstepper"><Icon style={{color: "#727581"}} className="iconstepper">check_box</Icon>Accompagnement de projets en méthode AGILE</p>
+              <p className="paragraphstepper"><Icon style={{color: "#4154AF"}} className="iconstepper">check_box</Icon>Explications de concepts de programmation pour 25 élèves et relecture de code et correction de bugs</p>
+              <p className="paragraphstepper"><Icon style={{color: "#4154AF"}} className="iconstepper">check_box</Icon>Accompagnement de projets en méthode AGILE</p>
+              <p className="paragraphstepper"><Icon style={{color: "#4154AF"}} className="iconstepper">check_box</Icon>Création de quiz et QCM sur le back-office de la plateforme interne de La Capsule</p>
             </Grid>
           </Grid>
 
         </div>
             );
     case 1:
+      return (
+        <div className="itemstepper">
+          <div>
+            <h2>Volunteer FullStack Developper</h2>
+            <h3>Equally Work</h3>
+          </div>
+          <Grid container spacing={24}>
+            <Grid alignContent="center" alignItems="center" md={4}>
+              <img className="imgstepper" src={Image6} alt="test"/>
+            </Grid>
+            <Grid alignContent="center" alignItems="center" md={8}>
+              <p className="paragraphstepper"><Icon style={{color: "#4154AF"}} className="iconstepper">check_box</Icon>Equally Work est un projet porté par une équipe de 7 volontaires et né après avoir remporté la première place lors du Start up Week end Future Of Work du 29 juin au 1er juillet 2018 à Paris. Equally Work a l’ambition de devenir la première plateforme digitale de la transparence sur les questions d’égalité, d’inclusion et de diversité en entreprise. Notre mission : permettre à tous.tes de noter qualitativement son entreprise et de s’exprimer librement et en sécurité. Notre objectif : valoriser les bonnes pratiques, faire entendre les voix des collaborateur.trice.s. et accélérer la diversité.</p>
+              <p className="paragraphstepper"><Icon style={{color: "#4154AF"}} className="iconstepper">check_box</Icon><strong>VOLONTAIRE</strong> - Développement FullStack React de la plateforme lors de mon temps libre</p>
+            </Grid>
+          </Grid>
+
+        </div>
+            );
+    case 2:
       return (
         <div className="itemstepper">
           <div>
@@ -81,15 +101,15 @@ function getStepContent(step) {
               <img className="imgstepper" src={Image2} alt="test"/>
             </Grid>
             <Grid alignContent="center" alignItems="center" md={8}>
-              <p className="paragraphstepper"><Icon style={{color: "#727581"}} className="iconstepper">check_box</Icon><strong>Apprentissage intensive en bootcamp pour devenir développeur FullStack JavaScript</strong></p>
-              <p className="paragraphstepper"><Icon style={{color: "#727581"}} className="iconstepper">check_box</Icon><strong>Elaboration en équipe de 2 projets :</strong> création d'une plateforme web et application mobile de type plateforme sociale</p>
-              <p className="paragraphstepper"><Icon style={{color: "#727581"}} className="iconstepper">check_box</Icon><strong>Stack tech:</strong> ReactJS - Express - Redux - React Native (Mobiles) - NodeJS - MongoDB - Javascript Frontend - APIs conception - HTML5 - CSS - Bootstrap - Git - Github</p>
+              <p className="paragraphstepper"><Icon style={{color: "#4154AF"}} className="iconstepper">check_box</Icon><strong>Apprentissage intensive en bootcamp pour devenir développeur FullStack JavaScript</strong></p>
+              <p className="paragraphstepper"><Icon style={{color: "#4154AF"}} className="iconstepper">check_box</Icon><strong>Elaboration en équipe de 2 projets :</strong> création d'une plateforme web et application mobile de type plateforme sociale</p>
+              <p className="paragraphstepper"><Icon style={{color: "#4154AF"}} className="iconstepper">check_box</Icon><strong>Stack tech:</strong> ReactJS - Express - Redux - React Native (Mobiles) - NodeJS - MongoDB - Javascript Frontend - APIs conception - HTML5 - CSS - Bootstrap - Git - Github</p>
             </Grid>
           </Grid>
 
         </div>
             );
-    case 2:
+    case 3:
       return (
         <div className="itemstepper">
           <div>
@@ -101,14 +121,14 @@ function getStepContent(step) {
               <img className="imgstepper" src={Image5} alt="test"/>
             </Grid>
             <Grid alignContent="center" alignItems="center" md={8}>
-              <p className="paragraphstepper"><Icon style={{color: "#727581"}} className="iconstepper">check_box</Icon><strong>SECTION CHIEF (Second Lieutenant) @French Air Force:</strong> Supervising team leader  - Section chief (Military reservists - FMIR) - Teached theoretical military courses (security clearances, legal framework of the legitimate defense, handling of weapons...) - Organized military practical activities (night topographic raid, FAMAS shooting...)</p>
-              <p className="paragraphstepper"><Icon style={{color: "#727581"}} className="iconstepper">check_box</Icon><strong>WATCH AND ANALYSIS - INTERNATIONAL RELATIONS @French Air Force:</strong> Produced and presented briefing notes to military authorities of  - One-off military activities</p>
+              <p className="paragraphstepper"><Icon style={{color: "#4154AF"}} className="iconstepper">check_box</Icon><strong>SECTION CHIEF (Second Lieutenant) @French Air Force:</strong> Supervising team leader  - Section chief (Military reservists - FMIR) - Teached theoretical military courses (security clearances, legal framework of the legitimate defense, handling of weapons...) - Organized military practical activities (night topographic raid, FAMAS shooting...)</p>
+              <p className="paragraphstepper"><Icon style={{color: "#4154AF"}} className="iconstepper">check_box</Icon><strong>WATCH AND ANALYSIS - INTERNATIONAL RELATIONS @French Air Force:</strong> Produced and presented briefing notes to military authorities of  - One-off military activities</p>
             </Grid>
           </Grid>
 
         </div>
             );
-    case 3:
+    case 4:
       return (
         <div className="itemstepper">
           <div>
@@ -120,15 +140,15 @@ function getStepContent(step) {
               <img className="imgstepper" src={Image3} alt="test"/>
             </Grid>
             <Grid alignContent="center" alignItems="center" md={8}>
-              <p className="paragraphstepper"><Icon style={{color: "#727581"}} className="iconstepper">check_box</Icon><strong>CybelAngel is a cybersecurity start-up company.</strong> Our innovative solution is designed to help companies detect data leaks and technical threats in real time. Our proprietary Big Data algorithm enables us to detect threats on the Deep and Dark Web. The collected data is then automatically filtered and analyzed by our team of analysts. The information exposed below is freely available</p>
-              <p className="paragraphstepper"><Icon style={{color: "#727581"}} className="iconstepper">check_box</Icon><strong>Bid Data Analysis:</strong> Conducted in-depth threat intelligence investigations on the Clear, Deep & Dark web, through high frequency crawlers and connected devices massive scanners - Risk assessment : competitive intelligence, physical security, social engineering, (spear)phishing, network penetration)  - Performed code vulnerabilty analysis (detection of credentials, SQL injections...) - Written highly sensitive incident reports (million dollars alerts)</p>
-              <p className="paragraphstepper"><Icon style={{color: "#727581"}} className="iconstepper">check_box</Icon><strong>Clients portfolio management:</strong> In charge of the cyber risks management relationship regarding 3 key clients (French CAC 40) - Monitored regular steering committee </p>
+              <p className="paragraphstepper"><Icon style={{color: "#4154AF"}} className="iconstepper">check_box</Icon><strong>CybelAngel is a cybersecurity start-up company.</strong> Our innovative solution is designed to help companies detect data leaks and technical threats in real time. Our proprietary Big Data algorithm enables us to detect threats on the Deep and Dark Web. The collected data is then automatically filtered and analyzed by our team of analysts. The information exposed below is freely available</p>
+              <p className="paragraphstepper"><Icon style={{color: "#4154AF"}} className="iconstepper">check_box</Icon><strong>Bid Data Analysis:</strong> Conducted in-depth threat intelligence investigations on the Clear, Deep & Dark web, through high frequency crawlers and connected devices massive scanners - Risk assessment : competitive intelligence, physical security, social engineering, (spear)phishing, network penetration)  - Performed code vulnerabilty analysis (detection of credentials, SQL injections...) - Written highly sensitive incident reports (million dollars alerts)</p>
+              <p className="paragraphstepper"><Icon style={{color: "#4154AF"}} className="iconstepper">check_box</Icon><strong>Clients portfolio management:</strong> In charge of the cyber risks management relationship regarding 3 key clients (French CAC 40) - Monitored regular steering committee </p>
             </Grid>
           </Grid>
 
         </div>
             );
-    case 4:
+    case 5:
       return (
         <div className="itemstepper">
           <div>
@@ -140,8 +160,8 @@ function getStepContent(step) {
               <img className="imgstepper" src={Image4} alt="test"/>
             </Grid>
             <Grid alignContent="center" alignItems="center" md={8}>
-              <p className="paragraphstepper"><Icon style={{color: "#727581"}} className="iconstepper">check_box</Icon><strong>CRISIS MANAGEMENT:</strong> Managed the elaboration of the Crisis Management Plan (PGC) and Business Continuity Plan (BCP) - Established crisis alert procedures - Triggered crisis alerts - Participated in the Lafarge France Crisis Cell as an operational crisis management assistant (ExCo..., Head of security, com...) - Programmed VBA operational crisis management tools - Monitored security analysis (created and maintained a real-time media monitoring device) - Assessed risks and weak signals, and redacted Monthly Security Reports</p>
-              <p className="paragraphstepper"><Icon style={{color: "#727581"}} className="iconstepper">check_box</Icon><strong>SECURITY OF PREMISES AND PEOPLE:</strong> Performed security audits (offices and quarries) - Participated in the management of the relationship with the local security providers - Written a traveler security manual (Group policies implementation) - Co-conducted an intrusion test - Developped a mapping for the France part (sites, diplomatic representations on the territory, gendarmeries brigades and police stations) with a goal of collaborative medium-term maintenance - Helped the development of an intelligence reporting tool (declaration of security incident / fraud) - Animated internal security awareness conferences, cyber-risks and social networks</p>
+              <p className="paragraphstepper"><Icon style={{color: "#4154AF"}} className="iconstepper">check_box</Icon><strong>CRISIS MANAGEMENT:</strong> Managed the elaboration of the Crisis Management Plan (PGC) and Business Continuity Plan (BCP) - Established crisis alert procedures - Triggered crisis alerts - Participated in the Lafarge France Crisis Cell as an operational crisis management assistant (ExCo..., Head of security, com...) - Programmed VBA operational crisis management tools - Monitored security analysis (created and maintained a real-time media monitoring device) - Assessed risks and weak signals, and redacted Monthly Security Reports</p>
+              <p className="paragraphstepper"><Icon style={{color: "#4154AF"}} className="iconstepper">check_box</Icon><strong>SECURITY OF PREMISES AND PEOPLE:</strong> Performed security audits (offices and quarries) - Participated in the management of the relationship with the local security providers - Written a traveler security manual (Group policies implementation) - Co-conducted an intrusion test - Developped a mapping for the France part (sites, diplomatic representations on the territory, gendarmeries brigades and police stations) with a goal of collaborative medium-term maintenance - Helped the development of an intelligence reporting tool (declaration of security incident / fraud) - Animated internal security awareness conferences, cyber-risks and social networks</p>
             </Grid>
           </Grid>
 
@@ -205,7 +225,7 @@ class VerticalLinearStepper extends React.Component {
                         color="primary"
                         onClick={this.handleNext}
                         className={classes.button}
-                        style={{backgroundColor: "#727581"}}
+                        style={{backgroundColor: "#4154AF"}}
                       >
                         {activeStep === steps.length - 1 ? 'And now...' : 'Next'}
                       </Button>

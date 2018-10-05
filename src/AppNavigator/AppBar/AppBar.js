@@ -195,13 +195,13 @@ class MenuAppBar extends React.Component {
     //   navigation = <Reach/>
     // }
 
-    console.log("MODAL DEPUIS APP BAR", this.state.openModalReact )
+    // console.log("MODAL DEPUIS APP BAR", this.state.openModalReact )
 
 
     return (
       <div className={classes.root}>
 
-        <AppBar position="static" style={{backgroundColor: "#717582"}} className="appbar">
+        <AppBar position="static" style={{backgroundColor: "#4154AF"}} className="appbar">
           <Toolbar>
               <div style={this.state.navOptions.navLink0} onClick={this.linkMouseClick0}><h3 style={styles.navLink}><Icon>home</Icon></h3></div>
               <div style={this.state.navOptions.navLink1} onClick={this.linkMouseClick1}><h3 style={styles.navLink}>Stack</h3></div>

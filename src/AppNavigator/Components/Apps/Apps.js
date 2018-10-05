@@ -85,10 +85,10 @@ class Apps extends React.Component {
   render() {
 
     var projectsList = projects.map((project, index) =>
-      <Grid alignContent="center" alignItems="center" item xs={12} sm={6} md={4}><AppItem key={index} name={project.name} image={project.src} url={project.url} github={project.github} desc={project.desc}/></Grid>)
+      <Grid item xs={12} sm={6} md={4}><AppItem key={index} name={project.name} image={project.src} url={project.url} github={project.github} desc={project.desc}/></Grid>)
 
     var projectsToDoList = projectsToDo.map((project, index) =>
-      <Grid alignContent="center" alignItems="center" item xs={12} sm={6} md={4}><AppItem key={index} name={project.name} image={project.src} url={project.url} github={project.github} desc={project.desc}/></Grid>)
+      <Grid item xs={12} sm={6} md={4}><AppItem key={index} name={project.name} image={project.src} url={project.url} github={project.github} desc={project.desc}/></Grid>)
 
 
     // const { classes } = this.props;
