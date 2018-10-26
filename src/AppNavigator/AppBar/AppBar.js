@@ -3,15 +3,6 @@ import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
-import IconButton from '@material-ui/core/IconButton';
-import MenuIcon from '@material-ui/icons/Menu';
-import AccountCircle from '@material-ui/icons/AccountCircle';
-import Switch from '@material-ui/core/Switch';
-import FormControlLabel from '@material-ui/core/FormControlLabel';
-import FormGroup from '@material-ui/core/FormGroup';
-import MenuItem from '@material-ui/core/MenuItem';
-import Menu from '@material-ui/core/Menu';
 import Icon from '@material-ui/core/Icon';
 
 import './AppBar.css';
@@ -21,7 +12,6 @@ import Stack from '../Components/Stack/Stack';
 import Apps from '../Components/Apps/Apps';
 import Experiences from '../Components/Path/Path';
 import Social from '../Components/Social/Social';
-import Reach from '../Components/Reach/Reach';
 
 const styles = {
   root: {
@@ -68,11 +58,11 @@ class MenuAppBar extends React.Component {
     this.linkMouseClick4 = this.linkMouseClick4.bind(this);
     this.state = {
       navOptions: {
-        navLink0: styles.navSelected, click: true,
-        navLink1: styles.navNormal, click: false,
-        navLink2: styles.navNormal, click: false,
-        navLink3: styles.navNormal, click: false,
-        navLink4: styles.navNormal, click: false,
+        navLink0: styles.navSelected, click0: true,
+        navLink1: styles.navNormal, click1: false,
+        navLink2: styles.navNormal, click2: false,
+        navLink3: styles.navNormal, click3: false,
+        navLink4: styles.navNormal, click4: false,
       },
       pageSelected: "Home",
       openModalReact: true,
@@ -85,12 +75,12 @@ class MenuAppBar extends React.Component {
   linkMouseClick0 = () => {
     this.setState({
       navOptions: {
-        navLink0: styles.navSelected, click: true,
-        navLink1: styles.navNormal, click: false,
-        navLink2: styles.navNormal, click: false,
-        navLink3: styles.navNormal, click: false,
-        navLink4: styles.navNormal, click: false,
-        navLink5: styles.navNormal, click: false,
+        navLink0: styles.navSelected, click0: true,
+        navLink1: styles.navNormal, click1: false,
+        navLink2: styles.navNormal, click2: false,
+        navLink3: styles.navNormal, click3: false,
+        navLink4: styles.navNormal, click4: false,
+        navLink5: styles.navNormal, click5: false,
       },
       pageSelected: "Home",
       openModalReact: false,
@@ -101,12 +91,12 @@ class MenuAppBar extends React.Component {
   linkMouseClick1 = () => {
     this.setState({
       navOptions: {
-        navLink0: styles.navNormal, click: false,
-        navLink1: styles.navSelected, click: true,
-        navLink2: styles.navNormal, click: false,
-        navLink3: styles.navNormal, click: false,
-        navLink4: styles.navNormal, click: false,
-        navLink5: styles.navNormal, click: false,
+        navLink0: styles.navNormal, click0: false,
+        navLink1: styles.navSelected, click1: true,
+        navLink2: styles.navNormal, click2: false,
+        navLink3: styles.navNormal, click3: false,
+        navLink4: styles.navNormal, click4: false,
+        navLink5: styles.navNormal, click5: false,
       },
       pageSelected: "Stack"
     })
@@ -116,12 +106,12 @@ class MenuAppBar extends React.Component {
   linkMouseClick2 = () => {
     this.setState({
       navOptions: {
-        navLink0: styles.navNormal, click: false,
-        navLink1: styles.navNormal, click: false,
-        navLink2: styles.navSelected, click: true,
-        navLink3: styles.navNormal, click: false,
-        navLink4: styles.navNormal, click: false,
-        navLink5: styles.navNormal, click: false,
+        navLink0: styles.navNormal, click0: false,
+        navLink1: styles.navNormal, click1: false,
+        navLink2: styles.navSelected, click2: true,
+        navLink3: styles.navNormal, click3: false,
+        navLink4: styles.navNormal, click4: false,
+        navLink5: styles.navNormal, click5: false,
       },
       pageSelected: "Apps"
     })
@@ -131,12 +121,12 @@ class MenuAppBar extends React.Component {
   linkMouseClick3 = () => {
     this.setState({
       navOptions: {
-        navLink0: styles.navNormal, click: false,
-        navLink1: styles.navNormal, click: false,
-        navLink2: styles.navNormal, click: false,
-        navLink3: styles.navSelected, click: true,
-        navLink4: styles.navNormal, click: false,
-        navLink5: styles.navNormal, click: false,
+        navLink0: styles.navNormal, click0: false,
+        navLink1: styles.navNormal, click1: false,
+        navLink2: styles.navNormal, click2: false,
+        navLink3: styles.navSelected, click3: true,
+        navLink4: styles.navNormal, click4: false,
+        navLink5: styles.navNormal, click5: false,
       },
       pageSelected: "Experiences"
     })
@@ -146,12 +136,12 @@ class MenuAppBar extends React.Component {
   linkMouseClick4 = () => {
     this.setState({
       navOptions: {
-        navLink0: styles.navNormal, click: false,
-        navLink1: styles.navNormal, click: false,
-        navLink2: styles.navNormal, click: false,
-        navLink3: styles.navNormal, click: false,
-        navLink4: styles.navSelected, click: true,
-        navLink5: styles.navNormal, click: false,
+        navLink0: styles.navNormal, click0: false,
+        navLink1: styles.navNormal, click1: false,
+        navLink2: styles.navNormal, click2: false,
+        navLink3: styles.navNormal, click3: false,
+        navLink4: styles.navSelected, click4: true,
+        navLink5: styles.navNormal, click5: false,
       },
       pageSelected: "Social"
     })
@@ -161,12 +151,12 @@ class MenuAppBar extends React.Component {
   linkMouseClick5 = () => {
     this.setState({
       navOptions: {
-        navLink0: styles.navNormal, click: false,
-        navLink1: styles.navNormal, click: false,
-        navLink2: styles.navNormal, click: false,
-        navLink3: styles.navNormal, click: false,
-        navLink4: styles.navNormal, click: false,
-        navLink5: styles.navSelected, click: true,
+        navLink0: styles.navNormal, click0: false,
+        navLink1: styles.navNormal, click1: false,
+        navLink2: styles.navNormal, click2: false,
+        navLink3: styles.navNormal, click3: false,
+        navLink4: styles.navNormal, click4: false,
+        navLink5: styles.navSelected, click5: true,
       },
       pageSelected: "Reach"
     })
@@ -180,15 +170,15 @@ class MenuAppBar extends React.Component {
 
     // HANDLING NAVIGATION
     var navigation;
-    if(this.state.pageSelected == "Home"){
+    if(this.state.pageSelected === "Home"){
       navigation = <Home modal={this.state.openModalReact}/>
-    } else if (this.state.pageSelected == "Stack"){
+    } else if (this.state.pageSelected === "Stack"){
       navigation = <Stack/>
-    } else if (this.state.pageSelected == "Apps"){
+    } else if (this.state.pageSelected === "Apps"){
       navigation = <Apps/>
-    } else if (this.state.pageSelected == "Experiences"){
+    } else if (this.state.pageSelected === "Experiences"){
       navigation = <Experiences/>
-    } else if (this.state.pageSelected == "Social"){
+    } else if (this.state.pageSelected === "Social"){
       navigation = <Social/>
       }
     // } else if (this.state.pageSelected == "Reach"){

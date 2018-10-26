@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 // import './Jumbotron.css';
 import Grid from '@material-ui/core/Grid';
 
@@ -6,7 +6,7 @@ import Grid from '@material-ui/core/Grid';
 import Stepper from './Stepper/Stepper';
 import './Path.css';
 
-import Image1 from '../Apps/Images/API.jpeg';
+// import Image1 from '../Apps/Images/API.jpeg';
 
 
 

@@ -1,6 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import { withStyles } from '@material-ui/core/styles';
+
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import CardActions from '@material-ui/core/CardActions';
@@ -8,7 +7,6 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-import Grid from '@material-ui/core/Grid';
 // import './Jumbotron.css';
 
 
@@ -40,11 +38,11 @@ class Apps extends React.Component {
     return (
       <div className="">
 
-          <Card className={styles.card} key={this.props.key}>
+          <Card style={styles.card} key={this.props.id}>
                 <CardActionArea>
                   <CardMedia
                     component="img"
-                    className={styles.media}
+                    className=""
                     image={this.props.image}
                     title={this.props.name}
                   />
@@ -52,8 +50,8 @@ class Apps extends React.Component {
                     <Typography gutterBottom variant="headline" component="h2">
                       {this.props.name}
                     </Typography>
-                    <Typography component="p">
-                      <div className={styles.size}>{this.props.desc}</div>
+                    <Typography component="p" style={styles.size}>
+                      {this.props.desc}
                     </Typography>
                   </CardContent>
                 </CardActionArea>

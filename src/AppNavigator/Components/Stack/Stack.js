@@ -2,7 +2,7 @@ import React from 'react';
 // import './Jumbotron.css';
 
 import GridList from './GridList/GridList';
-import { Line, Circle } from 'rc-progress';
+import { Circle } from 'rc-progress';
 
 import Grid from '@material-ui/core/Grid';
 
