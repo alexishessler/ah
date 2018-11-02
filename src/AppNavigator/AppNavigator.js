@@ -18,14 +18,14 @@ class AppNavigator extends React.Component {
 
     return (
       <div className="">
-        <AppBarNews/>
         <AppBar/>
       </div>
     );
   }
 }
 
-
+// AJOUTER LE COMPOSANT POUR LA BARRE JAUNE EN HAUT
+// <AppBarNews/>
 
 
 export default AppNavigator;

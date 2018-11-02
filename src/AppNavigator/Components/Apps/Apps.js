@@ -34,8 +34,8 @@ import './Apps.css';
 
 
 var projectsDone = [
-  {name: "WanPada", src: Image6, url: "", github: "https://github.com/davi13/wanpada_version_1", desc: "Application Mobile MVP de mise en relation", gitimage: GitHub, webimage: Web, videoimage: Play, video:"https://player.vimeo.com/video/289526700", nbDev: 1, onGoing: "No", stack: ["JavaScript", "React Native", "Redux", "NodeJS", "MongoDB", "HTML", "CSS", "..."]},
-  {name: "Wailde", src: Image5, url: "www.google.fr", github: "https://github.com/alexishessler/wailde", desc: "Application web de team building d'entreprise", gitimage: GitHub, webimage: Web, videoimage: Play, video:"https://player.vimeo.com/video/297975209", nbDev: 1, onGoing: "No", stack: ["JavaScript", "JQuery", "NodeJS", "MongoDB", "API GMap", "API Stripe", "API Twilio", "HTML", "CSS", "..."]},
+  {name: "WanPada", src: Image6, url: "", github: "https://github.com/davi13/wanpada_version_1", desc: "Application Mobile MVP de mise en relation", gitimage: GitHub, webimage: Web, videoimage: Play, video:"https://player.vimeo.com/video/289526700", nbDev: 4, onGoing: "No", stack: ["JavaScript", "React Native", "Redux", "NodeJS", "MongoDB", "HTML", "CSS", "..."]},
+  {name: "Wailde", src: Image5, url: "www.google.fr", github: "https://github.com/alexishessler/wailde", desc: "Application web de team building d'entreprise", gitimage: GitHub, webimage: Web, videoimage: Play, video:"https://player.vimeo.com/video/297975209", nbDev: 4, onGoing: "No", stack: ["JavaScript", "JQuery", "NodeJS", "MongoDB", "API GMap", "API Stripe", "API Twilio", "HTML", "CSS", "..."]},
 ]
 
 var projects = [
