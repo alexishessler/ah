@@ -45,7 +45,7 @@ const styles = theme => ({
 });
 
 function getSteps() {
-  return ['Sept 2018 - Current', 'July 2018 - Current','Apr 2018 - Jun 2018', 'Aug 2015 - Current', 'Sept 2017 - Apr 2018', 'Aug 2016 - Sept 2017'];
+  return ['Dec 2018 - current', 'July 2018 - Current', 'Sep 2018 - Dec 2018' , 'Jun 2018 - Sep 2018', 'Aug 2015 - Current', 'Sept 2017 - Apr 2018', 'Aug 2016 - Sept 2017'];
 }
 
 function getStepContent(step) {
@@ -54,7 +54,7 @@ function getStepContent(step) {
       return (
         <div className="itemstepper">
           <div>
-            <h2>Teacher Assistant</h2>
+            <h2>Paris Center Manager - Coding Teacher - Web Developper</h2>
             <h3>La Capsule Academy</h3>
           </div>
           <Grid container spacing={24}>
@@ -62,9 +62,12 @@ function getStepContent(step) {
               <img className="imgstepper" src={Image2} alt="test"/>
             </Grid>
             <Grid alignContent="center" alignItems="center" md={8}>
+              <p className="paragraphstepper"><Icon style={{color: "#4154AF"}} className="iconstepper">check_box</Icon>Management des teachers Assistants</p>
+              <p className="paragraphstepper"><Icon style={{color: "#4154AF"}} className="iconstepper">check_box</Icon>Innovation, consolidation et maintenance du programme académique</p>
+              <p className="paragraphstepper"><Icon style={{color: "#4154AF"}} className="iconstepper">check_box</Icon>Responsable des admissions des étudiants sur le centre de Paris</p>
+              <p className="paragraphstepper"><Icon style={{color: "#4154AF"}} className="iconstepper">check_box</Icon>Développement web en équipe de nouvelles features pour la plateforme interne La Capsule (Ariane)</p>
               <p className="paragraphstepper"><Icon style={{color: "#4154AF"}} className="iconstepper">check_box</Icon>Explications de concepts de programmation pour 25 élèves et relecture de code et correction de bugs</p>
-              <p className="paragraphstepper"><Icon style={{color: "#4154AF"}} className="iconstepper">check_box</Icon>Accompagnement de projets en méthode AGILE</p>
-              <p className="paragraphstepper"><Icon style={{color: "#4154AF"}} className="iconstepper">check_box</Icon>Création de quiz et QCM sur le back-office de la plateforme interne de La Capsule</p>
+              <p className="paragraphstepper"><Icon style={{color: "#4154AF"}} className="iconstepper">check_box</Icon>Encadrement et accompagnement de projets en méthode AGILE</p>
             </Grid>
           </Grid>
 
@@ -93,7 +96,7 @@ function getStepContent(step) {
       return (
         <div className="itemstepper">
           <div>
-            <h2>Formation intensive / 10 weeks bootcamp </h2>
+            <h2>Coding Teacher</h2>
             <h3>La Capsule Academy</h3>
           </div>
           <Grid container spacing={24}>
@@ -101,15 +104,35 @@ function getStepContent(step) {
               <img className="imgstepper" src={Image2} alt="test"/>
             </Grid>
             <Grid alignContent="center" alignItems="center" md={8}>
-              <p className="paragraphstepper"><Icon style={{color: "#4154AF"}} className="iconstepper">check_box</Icon><strong>Apprentissage intensive en bootcamp pour devenir développeur FullStack JavaScript</strong></p>
-              <p className="paragraphstepper"><Icon style={{color: "#4154AF"}} className="iconstepper">check_box</Icon><strong>Elaboration en équipe de 2 projets :</strong> création d'une plateforme web et application mobile de type plateforme sociale</p>
-              <p className="paragraphstepper"><Icon style={{color: "#4154AF"}} className="iconstepper">check_box</Icon><strong>Stack tech:</strong> ReactJS - Express - Redux - React Native (Mobiles) - NodeJS - MongoDB - Javascript Frontend - APIs conception - HTML5 - CSS - Bootstrap - Git - Github</p>
+              <p className="paragraphstepper"><Icon style={{color: "#4154AF"}} className="iconstepper">check_box</Icon>Dispense de cours théoriques FullStack JavaScript à des classes jusqu'à 25 élèves</p>
+              <p className="paragraphstepper"><Icon style={{color: "#4154AF"}} className="iconstepper">check_box</Icon>Mise en place d'exercices pratiques et correction par live code quotidiens</p>
+              <p className="paragraphstepper"><Icon style={{color: "#4154AF"}} className="iconstepper">check_box</Icon>Encadrement et accompagnement de projet de fin de session en méthodologie AGILE</p>
             </Grid>
           </Grid>
 
         </div>
             );
     case 3:
+      return (
+        <div className="itemstepper">
+          <div>
+            <h2>Teacher Assistant</h2>
+            <h3>La Capsule Academy</h3>
+          </div>
+          <Grid container spacing={24}>
+            <Grid alignContent="center" alignItems="center" md={4}>
+              <img className="imgstepper" src={Image2} alt="test"/>
+            </Grid>
+            <Grid alignContent="center" alignItems="center" md={8}>
+              <p className="paragraphstepper"><Icon style={{color: "#4154AF"}} className="iconstepper">check_box</Icon>Explications de concepts de programmation pour 25 élèves et relecture de code et correction de bugs</p>
+              <p className="paragraphstepper"><Icon style={{color: "#4154AF"}} className="iconstepper">check_box</Icon>Accompagnement de projets en méthode AGILE</p>
+              <p className="paragraphstepper"><Icon style={{color: "#4154AF"}} className="iconstepper">check_box</Icon>Création de quiz et QCM sur le back-office de la plateforme interne de La Capsule</p>
+            </Grid>
+          </Grid>
+
+        </div>
+            );
+    case 4:
       return (
         <div className="itemstepper">
           <div>
@@ -128,7 +151,7 @@ function getStepContent(step) {
 
         </div>
             );
-    case 4:
+    case 5:
       return (
         <div className="itemstepper">
           <div>
@@ -148,7 +171,7 @@ function getStepContent(step) {
 
         </div>
             );
-    case 5:
+    case 6:
       return (
         <div className="itemstepper">
           <div>
@@ -227,7 +250,7 @@ class VerticalLinearStepper extends React.Component {
                         className={classes.button}
                         style={{backgroundColor: "#4154AF"}}
                       >
-                        {activeStep === steps.length - 1 ? 'And now...' : 'Next'}
+                        {activeStep === steps.length - 1 ? "That's all for me..." : "Next"}
                       </Button>
                     </div>
                   </div>
@@ -238,7 +261,7 @@ class VerticalLinearStepper extends React.Component {
         </Stepper>
         {activeStep === steps.length && (
           <Paper square elevation={0} className={classes.resetContainer}>
-            <Typography><p><strong>Your company, your project? A Full-Time job? I am available! Feel free to contact me =)</strong></p></Typography>
+            <Typography><p><strong>If you want to disscuss, I am available! Feel free to contact me =)</strong></p></Typography>
             <Button onClick={this.handleReset} className={classes.button}>
               Reset
             </Button>

@@ -200,6 +200,7 @@ class Apps extends React.Component {
                         onClose={this.handleClose}
                         aria-labelledby="alert-dialog-slide-title"
                         aria-describedby="alert-dialog-slide-description"
+                        maxWidth="sm"
                       >
                         <DialogTitle id="alert-dialog-slide-title">
                           {this.props.name}
