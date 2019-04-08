@@ -4,10 +4,8 @@ import {
   Collapse,
   Navbar,
   NavbarToggler,
-  NavbarBrand,
   Nav,
   NavItem,
-  NavLink,
   FormGroup,
   Input, } from 'reactstrap';
 import { Link } from 'react-router-dom';
@@ -181,11 +179,13 @@ const styles = {
     backgroundColor: darkColor,
     color: lightColor,
     border: `1px solid ${goldColor}`,
+    cursor: 'pointer',
   },
   navinputlight: {
     backgroundColor: lightColor,
     color: darkColor,
     border: `1px solid ${goldColor}`,
+    cursor: 'pointer',
   },
   navtitle: {
     fontSize: 26
