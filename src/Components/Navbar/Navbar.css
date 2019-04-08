@@ -1,0 +1,11 @@
+.navfocus:focus {
+  outline:none;
+}
+
+.navfocus:hover {
+  outline:none;
+}
+
+.navfocus {
+  outline:none;
+}
