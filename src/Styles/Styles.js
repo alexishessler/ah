@@ -1,8 +1,11 @@
 import styled from 'styled-components';
+import {progressFrame} from './KeyFrames';
+
 
 const darkColor = '#232323';
 const lightColor = '#F6F6F6';
 const goldColor = '#F5EB48';
+const greyColor = '#DADADA';
 
 const BtnNav = styled.div`
   background-color: ${props => (props.background === "dark" ? darkColor : lightColor)};
@@ -35,6 +38,26 @@ const Wrapper = styled.div`
 const Btn = styled.button`
   background-color: ${props => (props.selected ? goldColor : darkColor)};
   color: ${props => (props.selected ? darkColor : lightColor)};
+  // border: 1px solid ${goldColor}
+  border: 1px solid ${props => (props.selected ? darkColor : goldColor)};
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 8px;
+  margin-top: 20px;
+  margin-left: 30px;
+  width: ${props => props.width}px;
+  cursor: pointer;
+  &:focus {
+    outline:none;
+  };
+`
+
+const BtnHome = styled.button`
+  background-color: ${goldColor}
+  color: ${darkColor}
   border: 1px solid ${goldColor}
   padding: 15px;
   text-align: center;
@@ -43,15 +66,15 @@ const Btn = styled.button`
   font-size: 16px;
   border-radius: 8px;
   margin-top: 20px;
-  margin-left: 10px;
+  margin-left: 30px;
   width: ${props => props.width}px;
   cursor: pointer;
   &:focus {
     outline:none;
   };
   &:hover {
-    background-color: ${props => (props.selected ? darkColor : goldColor)};
-    color: ${props => (props.selected ? goldColor : darkColor)};
+    background-color: ${darkColor}
+    color: ${lightColor}
   }
 `
 
@@ -61,6 +84,7 @@ const H1 = styled.h1`
   padding-top: 10px;
   padding-bottom: 0;
   margin: 0;
+  margin-left: 20px;
 `
 
 const H2 = styled.h2`
@@ -69,6 +93,8 @@ const H2 = styled.h2`
   padding-top: 10px;
   padding-bottom: 0;
   margin: 0;
+  margin-left: 20px;
+  text-shadow: 5px 5px 5px ${props => (props.shadow === 'dark' ? darkColor : lightColor)};;
 `
 
 const H3 = styled.h3`
@@ -77,7 +103,55 @@ const H3 = styled.h3`
   padding-top: 10px;
   padding-bottom: 0;
   margin: 0;
+  margin-left: 20px;
+  text-shadow: 5px 5px 5px ${props => (props.shadow === 'dark' ? darkColor : lightColor)};;
 `
+
+const H4 = styled.h4`
+  margin-top: 20px;
+  `
+
+const VirginProgressStack = styled.div`
+  background-color: ${props => (props.background === "dark" ? lightColor : greyColor)};
+  border: none;
+  padding: 0;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 8px;
+  margin-top: 5px;
+  margin-left: 0px;
+  width: 100%;
+  height: 20px;
+  cursor: pointer;
+  &:focus {
+    outline:none;
+  };
+`
+
+const ProgressStack = styled.div`
+  background-color: ${goldColor};
+  border: none;
+  color: ${darkColor};
+  border: none;
+  padding: 0;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 8px;
+  margin-top: 20px;
+  margin-left: 30px;
+  width: ${props => props.width}%;
+  height: 20px;
+  cursor: pointer;
+  animation: ${props => progressFrame(props.width)} 2s ease-in-out 0s 1;
+  &:focus {
+    outline:none;
+  };
+`
+
 
 export {
   darkColor,
@@ -86,9 +160,13 @@ export {
   BtnNav,
   Wrapper,
   Btn,
+  BtnHome,
   H1,
   H2,
-  H3
+  H3,
+  H4,
+  VirginProgressStack,
+  ProgressStack
 };
 
 

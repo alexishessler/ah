@@ -1,5 +1,3 @@
-console.log("THEME REDUCER")
-
 const dark = '#000000';
 const light = '#EEEEEE';
 

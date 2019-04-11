@@ -1,5 +1,4 @@
 import React from 'react';
-import { connect } from 'react-redux';
 
 // Components
 import Error from './Components/Screens/Error/Error';
@@ -8,7 +7,6 @@ import Skills from './Components/Screens/Skills/Skills';
 import Experiences from './Components/Screens/Experiences/Experiences';
 import Portfolio from './Components/Screens/Portfolio/Portfolio';
 import Social from './Components/Screens/Social/Social';
-import Navbar from './Components/Navbar/Navbar';
 
 // Routers
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
@@ -16,7 +14,6 @@ import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
 class App extends React.Component {
   render() {
-    const { language } = this.props;
     return (
       <div>
         <Router>

@@ -2,9 +2,6 @@ import React from 'react'
 import Navbar from '../../Navbar/Navbar';
 import { connect } from 'react-redux';
 import {
-  darkColor,
-  lightColor,
-  goldColor,
   Wrapper } from '../../../Styles/Styles';
 
 class Experiences extends React.Component {
@@ -12,7 +9,6 @@ class Experiences extends React.Component {
 
   render() {
 
-    console.log("FROM EXPERIENCES")
     const { theme, language } = this.props;
 
     return (

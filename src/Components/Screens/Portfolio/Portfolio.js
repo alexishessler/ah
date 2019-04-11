@@ -2,9 +2,6 @@ import React from 'react'
 import Navbar from '../../Navbar/Navbar';
 import { connect } from 'react-redux';
 import {
-  darkColor,
-  lightColor,
-  goldColor,
   Wrapper } from '../../../Styles/Styles';
 
 class Portfolio extends React.Component {

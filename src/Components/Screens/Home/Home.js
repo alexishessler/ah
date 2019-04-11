@@ -1,18 +1,16 @@
 import React from 'react'
-import Navbar from '../../Navbar/Navbar';
+import Navbar from './Navbar';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import {
-  darkColor,
-  lightColor,
   goldColor,
   Btn,
-  H1,
+  BtnHome,
   H2,
   H3,
   Wrapper } from '../../../Styles/Styles';
-import darkImage from './alexishessler-dark.png';
-import lightImage from './alexishessler-light.png';
+import darkImage from './ui/alexishessler-dark.png';
+import lightImage from './ui/alexishessler-light.png';
 
 
 
@@ -24,33 +22,31 @@ class Home extends React.Component {
 
   render() {
 
-    console.log("FROM HOME")
     const { theme, language } = this.props;
-    console.log(theme._)
 
     return (
       <div>
         <Navbar/>
         <Wrapper background={theme._} color={theme._}>
+          <div style={theme._ === 'dark' ? styles.darkhome : styles.lighthome}>
             {
               language === 'English'
                 ? <div style={styles.display}>
-                    <H2>Hello world, I'm Alexis Hessler<span style={styles._}>_</span></H2>
-                    <H3>Welcome to my online universe<span style={styles._}>_</span></H3>
+                    <H2 shadow={theme._}>Hello world, I'm Alexis Hessler<span style={styles._}>_</span></H2>
+                    <H3 shadow={theme._}>Welcome to my online universe<span style={styles._}>_</span></H3>
                   </div>
                 : language === 'Français'
                 ? <div style={styles.display}>
-                    <H2>Salut le monde, je suis Alexis Hessler<span style={styles._}>_</span></H2>
-                    <H3>Bienvenue dans mon univers en ligne<span style={styles._}>_</span></H3>
+                    <H2 shadow={theme._}>Salut le monde, je suis Alexis Hessler<span style={styles._}>_</span></H2>
+                    <H3 shadow={theme._}>Bienvenue dans mon univers en ligne<span style={styles._}>_</span></H3>
                   </div>
                 : null
             }
-          <div style={theme._ === 'dark' ? styles.darkhome : styles.lighthome}>
             {
                 language === 'English'
-                  ? <Link style={styles.screenlink} to='/skills'><Btn width="200">Discover now</Btn></Link>
+                  ? <Link style={styles.screenlink} to='/skills'><BtnHome width="200">Discover now</BtnHome></Link>
                   : language === 'Français'
-                  ? <Link style={styles.screenlink} to='/skills'><Btn width="200">Découvrir maintenant</Btn></Link>
+                  ? <Link style={styles.screenlink} to='/skills'><BtnHome width="200">Découvrir maintenant</BtnHome></Link>
                   : null
             }
           </div>
@@ -70,15 +66,19 @@ const styles = {
   },
   darkhome: {
     backgroundImage: `url("${darkImage}")`,
-    backgroundPosition: 'top right',
+    backgroundPosition: 'top center',
     backgroundSize: 'cover',
+    backgroundRepeat: 'no-repeat',
+    backgroundAttachment: 'fixed',
     minHeight: '90vh',
     width: '100%',
   },
   lighthome: {
     backgroundImage: `url("${lightImage}")`,
-    backgroundPosition: 'top right',
+    backgroundPosition: 'top center',
     backgroundSize: 'cover',
+    backgroundRepeat: 'no-repeat',
+    backgroundAttachment: 'fixed',
     minHeight: '90vh',
     width: '100%',
   },

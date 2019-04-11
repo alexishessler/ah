@@ -1,18 +1,12 @@
 import React from 'react'
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 import { connect } from 'react-redux';
-import {
-  darkColor,
-  lightColor,
-  goldColor,
-  Wrapper } from '../../Styles/Styles';
 
 class Socialmodal extends React.Component {
 
   render() {
 
-    console.log("FROM SOCIAL MODAL")
-    const { theme, language } = this.props;
+    const { language } = this.props;
 
     return (
       <div>
