@@ -19,7 +19,7 @@ const theme = {
 export default function(color=theme.dark, action){
   if(action.type === 'settheme'){
     let selectedTheme;
-    action.theme === 'Dark Theme'
+    action.theme === 'Dark Theme' || action.theme === 'Thème Dark'
       ? selectedTheme = theme.dark
       : selectedTheme = theme.light
     return selectedTheme;

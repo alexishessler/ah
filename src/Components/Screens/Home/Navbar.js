@@ -31,6 +31,7 @@ class Navigation extends React.Component {
   render() {
 
     const { theme, language } = this.props;
+    console.log("herrre", language)
 
     return (
       <div>
@@ -48,8 +49,8 @@ class Navigation extends React.Component {
               <NavItem style={{paddingTop: 12, width: '120px'}}>
                 <FormGroup>
                   <Input style={theme._ === 'dark' ? styles.navinputdark : styles.navinputlight} className="navfocus" type="select" name="theme" id="themeSelect" defaultValue={theme.name} onChange={(value) => this.toogleTheme(value)}>
-                    <option>Dark Theme</option>
-                    <option>Light Theme</option>
+                    <option>{ language === 'English' ? 'Dark Theme' : 'Thème Dark'}</option>
+                    <option>{ language === 'English' ? 'Light Theme' : 'Thème Light'}</option>
                   </Input>
                 </FormGroup>
               </NavItem>

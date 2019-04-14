@@ -2,14 +2,22 @@ import React from 'react'
 import Navbar from '../../Navbar/Navbar';
 import { connect } from 'react-redux';
 import {
-  Wrapper } from '../../../Styles/Styles';
+  goldColor,
+  Btn,
+  H2,
+  H3,
+  H4,
+  VirginProgressStack,
+  ProgressStack,
+  Wrapper, 
+  darkColor,
+  lightColor} from '../../../Styles/Styles';
 
 class Portfolio extends React.Component {
 
 
   render() {
 
-    console.log("FROM PORTFOLIO")
     const { theme, language } = this.props;
 
     return (
@@ -18,15 +26,29 @@ class Portfolio extends React.Component {
         <Wrapper background={theme._} color={theme._}>
         {
           language === 'English'
-          ? <h2>Portfolio Component</h2>
-          : language === 'Français'
-          ? <h2>Composant Réalisations</h2>
-          : null
+            ? <div style={styles.display}>
+                <H2 shadow={theme._}>Portfolio<span style={styles._}>_</span></H2>
+              </div>
+            : language === 'Français'
+            ? <div style={styles.display}>
+                <H2 shadow={theme._}>Réalisations<span style={styles._}>_</span></H2>
+              </div>
+            : null
         }
         </Wrapper>
       </div>
     );
   }
+}
+
+const styles = {
+  _ : {
+    fontWeight: "lighter",
+    color: goldColor
+  },
+  display: {
+    paddingTop: 20,
+  },
 }
 
 const mapStateToProps = (state) => {

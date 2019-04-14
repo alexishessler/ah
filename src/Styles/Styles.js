@@ -6,6 +6,7 @@ const darkColor = '#232323';
 const lightColor = '#F6F6F6';
 const goldColor = '#F5EB48';
 const greyColor = '#DADADA';
+const darkgreyColor ="#3A3639";
 
 const BtnNav = styled.div`
   background-color: ${props => (props.background === "dark" ? darkColor : lightColor)};
@@ -37,9 +38,8 @@ const Wrapper = styled.div`
 `
 const Btn = styled.button`
   background-color: ${props => (props.selected ? goldColor : darkColor)};
-  color: ${props => (props.selected ? darkColor : lightColor)};
-  // border: 1px solid ${goldColor}
-  border: 1px solid ${props => (props.selected ? darkColor : goldColor)};
+  color: ${props => (props.selected ? darkColor : lightColor)}; 
+  border: 1px solid ${props => props.theme === 'dark' && props.selected ? darkColor : props.theme === 'dark' && !props.selected ? goldColor : props.theme === 'light' ? lightColor : lightColor}
   padding: 15px;
   text-align: center;
   text-decoration: none;
@@ -152,11 +152,26 @@ const ProgressStack = styled.div`
   };
 `
 
+const ModalWrapper = styled.div`
+  background-color: ${props => (props.theme === "dark" ? greyColor : lightColor)};
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  &:hover {
+    background-color: ${goldColor};
+  };
+`
+
 
 export {
   darkColor,
   lightColor,
   goldColor,
+  greyColor,
   BtnNav,
   Wrapper,
   Btn,
@@ -165,8 +180,10 @@ export {
   H2,
   H3,
   H4,
+  darkgreyColor,
   VirginProgressStack,
-  ProgressStack
+  ProgressStack,
+  ModalWrapper
 };
 
 
