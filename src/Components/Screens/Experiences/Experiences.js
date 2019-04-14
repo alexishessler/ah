@@ -51,16 +51,53 @@ class Experiences extends React.Component {
     const { theme, language } = this.props;
 
     const displayExperience = (
-      <div>
-        <h4>{this.state.experience.company}</h4>
-        <h5>{this.state.experience.title}</h5>
-        <h6>{this.state.experience.date}</h6>
-        <p>{this.state.experience.desc}</p>
+      <div>     
+          {
+          language === 'English'
+            ? <div>
+                <div style={styles.headerexperience}>
+                  <img style={styles.logocompany} src={require(`${this.state.experience.en.img}`)} alt={this.state.experience.en.company}/>
+                    <div>
+                      <h4>{this.state.experience.en.company}<span style={styles._}>_</span></h4>
+                      <h5>{this.state.experience.en.title}</h5>
+                      <h6>{this.state.experience.en.date}</h6>
+                    </div>
+                </div>
+                <ul style={styles.li}> 
+                { 
+                  this.state.experience.en.desc.map((el, i) => {
+                    return(
+                      <li>{el}</li>
+                    )
+                  }) 
+                }
+                </ul>
+              </div>
+            : language === 'Français'
+            ? <div>
+                <div style={styles.headerexperience}>
+                  <img style={styles.logocompany} src={require(`${this.state.experience.en.img}`)} alt={this.state.experience.en.company}/>
+                    <div>
+                      <h4>{this.state.experience.fr.company}<span style={styles._}>_</span></h4>
+                      <h5>{this.state.experience.fr.title}</h5>
+                      <h6>{this.state.experience.fr.date}</h6>
+                    </div>
+                </div>
+                <ul style={styles.li}> 
+                { 
+                  this.state.experience.fr.desc.map((el, i) => {
+                    return(
+                      <li>{el}</li>
+                    )
+                  }) 
+                }
+                </ul>
+              </div>
+            : null
+          }     
       </div>
     )
 
-    console.log("STEP NOW: --->", this.state.step)
-    console.log("CONTENT NOW: --->", this.state.experience)
 
     return (
       <div>
@@ -99,7 +136,15 @@ class Experiences extends React.Component {
                 <div style={styles.orangebutton}></div>
                 <div style={styles.greenbutton}></div>
                 <div style={theme._ === 'dark' ? styles.titleterminaldisplaydark : styles.titleterminaldisplaylight}>
-                  <h6 style={theme._ === 'dark' ? styles.titleterminaldark : styles.titleterminallight}>Experiences - Bash - Alexis Hessler</h6>
+                  <h6 style={theme._ === 'dark' ? styles.titleterminaldark : styles.titleterminallight}>
+                  {
+                    language === 'English'
+                      ? 'Experiences - Bash - Alexis Hessler - EN'
+                      : language === 'Français'
+                      ? 'Expériences - Bash - Alexis Hessler - FR'
+                      : null
+                  }
+                  </h6>
                 </div>
                 <div style={theme._ === 'dark' ? styles.titleterminaldisplaycontentdark : styles.titleterminaldisplaycontentlight}>
                   {
@@ -128,40 +173,45 @@ const styles = {
     display: 'block',
     margin: 'auto',
     marginTop: 50,
-    maxWidth: '530px',
+    maxWidth: '630px',
     borderRadius: '10px',
     boxShadow: 'rgba(0, 0, 0, 0.8) 0px 20px 70px',
     clear: 'both',
     overflow: 'hidden',
     position: 'relative',
+    marginBottom: 50
   },
   titleterminaldisplaydark: {
     backgroundColor: lightColor,
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    paddingTop: 7,
+    paddingTop: 8,
   },
   titleterminaldark: {
     color: darkColor,
+    fontSize: 14.5
   },
   titleterminaldisplaylight: {
     backgroundColor: greyColor,
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    paddingTop: 7,
+    paddingTop: 8,
   },
   titleterminallight: {
     color: darkColor,
+    fontSize: 14.5
   },
   titleterminaldisplaycontentdark: {
     backgroundColor: darkgreyColor,
     padding: 10,
+    minHeight: 300
   },
   titleterminaldisplaycontentlight: {
     backgroundColor: lightColor,
     padding: 10,
+    minHeight: 300
   },
   redbutton: {
     width: 15,
@@ -192,6 +242,20 @@ const styles = {
     top: 10,
     left: 50,
     cursor: 'pointer'
+  },
+  logocompany: {
+    width: 100,
+    height: 100,
+    borderRadius: '100%',
+    margin: 20,
+  },
+  headerexperience: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'bottom',
+  },
+  li: {
+    marginTop: 20
   }
 }
 
