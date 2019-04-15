@@ -4,7 +4,6 @@ import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import {
   goldColor,
-  Btn,
   BtnHome,
   H2,
   H3,

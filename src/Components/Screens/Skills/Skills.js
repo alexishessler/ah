@@ -8,13 +8,11 @@ import {
   goldColor,
   Btn,
   H2,
-  H3,
   H4,
   VirginProgressStack,
   ProgressStack,
   Wrapper, 
-  darkColor,
-  lightColor} from '../../../Styles/Styles';
+  darkColor} from '../../../Styles/Styles';
 import Popover from './Popover/Popover';
 
 
@@ -58,8 +56,6 @@ class Skills extends React.Component {
   render() {
 
     const { theme, language } = this.props;
-    console.log(data)
-    console.log(this.state.displayBars)
 
     // FRONTEND BARS
     let frontProgressBars = data.front.map((el, i) => {

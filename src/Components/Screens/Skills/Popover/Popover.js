@@ -2,15 +2,7 @@ import React from 'react';
 import { Popover, PopoverHeader, PopoverBody } from 'reactstrap';
 import {
     goldColor,
-    Btn,
-    H2,
-    H3,
-    H4,
-    VirginProgressStack,
-    ProgressStack,
-    Wrapper, 
-    darkColor,
-    lightColor} from '../../../../Styles/Styles';
+    darkColor} from '../../../../Styles/Styles';
 
 export default class PopoverItem extends React.Component {
   constructor(props) {

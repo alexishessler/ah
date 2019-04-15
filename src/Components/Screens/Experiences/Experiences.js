@@ -5,20 +5,13 @@ import { Container, Row, Col } from 'reactstrap';
 import data from './data';
 import {
   goldColor,
-  Btn,
   BtnHome,
   H2,
-  H3,
-  H4,
-  VirginProgressStack,
-  ProgressStack,
   Wrapper, 
   darkColor,
   greyColor,
   darkgreyColor,
   lightColor} from '../../../Styles/Styles';
-
-import ExperiencesBackground from './ui/experiencesbackground.png';
 
 class Experiences extends React.Component {
 
@@ -67,7 +60,7 @@ class Experiences extends React.Component {
                 { 
                   this.state.experience.en.desc.map((el, i) => {
                     return(
-                      <li>{el}</li>
+                      <li key={i}>{el}</li>
                     )
                   }) 
                 }
@@ -87,7 +80,7 @@ class Experiences extends React.Component {
                 { 
                   this.state.experience.fr.desc.map((el, i) => {
                     return(
-                      <li>{el}</li>
+                      <li key={i}>{el}</li>
                     )
                   }) 
                 }

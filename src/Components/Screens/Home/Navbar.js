@@ -1,8 +1,6 @@
 import React from 'react';
 import {
-  Collapse,
   Navbar,
-  NavbarToggler,
   Nav,
   NavItem,
   FormGroup,
@@ -13,8 +11,7 @@ import { connect } from 'react-redux';
 import {
   darkColor,
   lightColor,
-  goldColor,
-  BtnNav } from '../../../Styles/Styles';
+  goldColor } from '../../../Styles/Styles';
 
 class Navigation extends React.Component {
 
@@ -31,7 +28,6 @@ class Navigation extends React.Component {
   render() {
 
     const { theme, language } = this.props;
-    console.log("herrre", language)
 
     return (
       <div>

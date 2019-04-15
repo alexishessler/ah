@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button, Modal, ModalHeader, ModalBody, ModalFooter, Container, Row, Col } from 'reactstrap';
+import { Modal, ModalHeader, ModalBody, Container, Row, Col } from 'reactstrap';
 import { connect } from 'react-redux';
 
 import Linkedin from './Icons/linkedin.png';
@@ -7,7 +7,7 @@ import Github from './Icons/github.png';
 import Mail from './Icons/mail.png';
 
 import {
-  ModalWrapper, darkColor, goldColor, greyColor, lightColor} from '../../Styles/Styles';
+  ModalWrapper, greyColor, lightColor} from '../../Styles/Styles';
 
 class Socialmodal extends React.Component {
 
