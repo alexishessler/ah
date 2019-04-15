@@ -9,7 +9,6 @@ import { Card, CardImg, CardText, CardBody,
 
 class BigProjects extends React.Component {
 
-
   render() {
 
     const { theme } = this.props;
